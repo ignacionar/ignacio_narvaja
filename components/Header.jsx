@@ -12,7 +12,7 @@ const StyledGrid = styled.div`
   color: white;
   border-bottom: 1px solid white;
   margin-bottom: 80px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     display: grid; 
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
@@ -32,7 +32,7 @@ const StyledList = styled.ul`
   align-items: center;
   font-size: 2.5rem;
   margin: 0;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     padding: 20px;
   }
 `;

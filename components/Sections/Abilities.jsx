@@ -6,7 +6,7 @@ const AbilitiesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 70px;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     grid-template-columns: none;
     row-gap: 40px;
     margin-bottom: 0;
@@ -32,7 +32,7 @@ const ImagesContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center; 
   row-gap: 10px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     position: relative;
     grid-template-columns: 1fr 1fr;
   }

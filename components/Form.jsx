@@ -9,7 +9,7 @@ const NameAndEmail = styled.div`
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
   }
@@ -22,7 +22,7 @@ const InputContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     display: grid;
     grid-template-columns: 100px 1fr;
     padding: 20px 10px;

@@ -22,7 +22,7 @@ const TextNImg = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
   }
@@ -61,7 +61,7 @@ const ProjectLinks = styled.div`
   align-self: center;
   height: 50px;
   margin: 40px auto;
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
     margin: 20px auto;
   }
@@ -84,7 +84,7 @@ const ProjectLink = styled.a`
     transform: translate(0px, -4px);
     transition: .3s ease;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     width: 80%;
     font-size: 18px;
     text-align: center;

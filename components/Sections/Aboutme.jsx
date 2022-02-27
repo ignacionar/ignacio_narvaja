@@ -11,7 +11,7 @@ const TextNFoto = styled.div`
   align-items: center;
   height: 300px;
   margin-bottom: 80px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     display: grid; 
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
@@ -35,7 +35,7 @@ const StyledText = styled.div`
   border: 3px solid #4770f5;
   width: 80%;
   padding: 10px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     margin: 0 auto;
   }
 `;
