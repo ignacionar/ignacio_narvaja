@@ -7,9 +7,6 @@
     "lint": "next lint",
     "build": "next build"
   },
-  "engines": {
-    "node": "16.x"
-  },
   "dependencies": {
     "@formspree/react": "^2.2.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
