@@ -35,7 +35,7 @@ body::-webkit-scrollbar-track {
 }
 
 .fadedOut {
-  animation: fadeOut 2s forwards;
+  animation: fadeOut 1.5s forwards;
 }
 
 form {
