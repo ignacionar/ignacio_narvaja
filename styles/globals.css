@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Poppins&display=swap');
+
+html,
+body {
+  margin: 0;
+  background-color: #151515;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  } 
+  to {
+    opacity: 0;
+  }
+}
+
+.fadedOut {
+  animation: fadeOut 2s forwards;
+}
+
+form {
+  height: 300px;
+  text-align: center;
+}
+
+label {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+input {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #8c8888;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px;
+}
+
+textarea {
+  width: 80%;
+  padding-bottom: 100px;
+  border: 2px solid #8c8888;
+  margin-left: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.04)
+}
+
+button:before {
+  content: '';
+  content: '';
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 12px;
+  left: 10px;
+  background-color: #fabd52;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+button:hover::before {
+  transform: scaleX(1);
+}
+
+button:disabled {
+  border: 2px solid grey;
+  cursor: not-allowed;
+  background-color: white;
+}
+
+button:disabled:before {
+  content: '';
+  height: 0px;
+  content: '';
+}
+
+button:disabled:hover {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 600px) {
+  textarea {
+    margin: 0;
+    padding-bottom: 50px;
+  }
+  button {
+    margin: 0 auto;
+  }
+  input {
+    width: 75%;
+    margin-left: 0;
+
+  }
+}
