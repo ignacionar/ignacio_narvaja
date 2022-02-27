@@ -57,6 +57,7 @@ input {
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
   padding: 8px;
+  margin-left: 26px;
 }
 
 textarea {
@@ -130,6 +131,5 @@ button:disabled:hover {
   input {
     width: 75%;
     margin-left: 0;
-
   }
 }

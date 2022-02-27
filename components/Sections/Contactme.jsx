@@ -6,7 +6,7 @@ import SectionTitle from './../SectionComponents/SectionTitle';
 const FormContainer = styled.div`
   background-color: #fabd52;
   margin: 50px auto;
-  width: 65%;
+  width: 75%;
   box-shadow: 5px 5px 5px black;
   border-radius: 25px 25px 0 0;
 `;
