@@ -25,6 +25,7 @@ const TextNImg = styled.div`
   @media screen and (max-width: 1000px) {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
+    height: 400px;
   }
 `;
 
@@ -45,7 +46,7 @@ const ProjectImg = styled.img`
   margin: 0 auto;
   @media screen and (max-width: 1000px) {
     width: 90%;
-    margin: 20px auto;
+    margin-bottom: 20px;
   }
 `;
 
@@ -68,6 +69,7 @@ const ProjectLinks = styled.div`
   @media screen and (max-width: 1000px) {
     width: 100%;
     margin: 20px auto;
+    padding-top: 60px;
   }
 `;
 
