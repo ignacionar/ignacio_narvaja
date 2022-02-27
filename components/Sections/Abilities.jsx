@@ -45,6 +45,14 @@ const StyledSquare = styled.div`
   height: 140px;
 `;
 
+const MobileStyledSquare = styled.div`
+  width: 100px;
+  height: 140px;
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+`;
+
 const StyledImage = styled.img`
   width: 100%;
   height: auto;
@@ -94,6 +102,10 @@ const Abilities = () => {
             <StyledSquare><StyledImage src='git.png'/><StyledName>Git</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='github.png'/><StyledName>Github</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='vercel.svg'/><StyledName>Vercel</StyledName></StyledSquare>
+            <StyledSquare><StyledImage src='postman-seeklogo.com.svg'/><StyledName>Postman</StyledName></StyledSquare>
+            <StyledSquare><StyledImage src='whimiscal.png' style={{width: '96px', height: '96px'}}/><StyledName>Whimiscal</StyledName></StyledSquare>
+            <MobileStyledSquare></MobileStyledSquare>
+            <MobileStyledSquare></MobileStyledSquare>
           </ImagesContainer>
         </AbilitiesSection>
       </AbilitiesGrid>
