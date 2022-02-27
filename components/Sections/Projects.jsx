@@ -43,6 +43,10 @@ const ProjectImg = styled.img`
   text-align: center;
   box-shadow: 5px 5px 5px black;
   margin: 0 auto;
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+    margin: 20px auto;
+  }
 `;
 
 const ProjectText = styled.div`
@@ -85,8 +89,8 @@ const ProjectLink = styled.a`
     transition: .3s ease;
   }
   @media screen and (max-width: 1000px) {
-    width: 80%;
-    font-size: 18px;
+    width: 85%;
+    font-size: 14px;
     text-align: center;
     padding: 20px 0;
   }

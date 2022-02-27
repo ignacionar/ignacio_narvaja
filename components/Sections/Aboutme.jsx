@@ -29,6 +29,10 @@ const StyledPhoto = styled.img`
   height: auto;
   border-radius: 100%;
   outline: 5px solid black;
+  @media screen and (max-width: 1000px) {
+    border: 5px solid black;
+    outline: none;
+  }
 `;
 
 const StyledText = styled.div`
