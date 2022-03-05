@@ -69,7 +69,7 @@ const Sections = () => {
         Actualmente estoy cursando la primera etapa de <StyledLink href={'https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'} rel="noopener noreferrer" target={'_blank'}>Argentina Programa</StyledLink>, y busco un trabajo que me permita desarrollarme profesionalmente :)
         </Paragraph>
         <section style={{textAlign: 'center'}}>
-          <StyledLink style={{color: '#4770f5', fontSize: '18px'}} href={'https://drive.google.com/file/d/1bOuc4e08onA9Ts8n1Hsoxz4Kg3pKDmHh/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">
+          <StyledLink style={{color: '#4770f5', fontSize: '18px'}} href={'https://drive.google.com/file/d/1JcdaCcKV3y5A3DofOFr0BtdKKP3bXvGK/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">
           DESCARGAR CURRICULUM VITAE
           </StyledLink>
         </section>
