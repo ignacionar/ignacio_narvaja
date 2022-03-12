@@ -104,6 +104,7 @@ const Abilities = () => {
             <StyledSquare><StyledImage src='vercel.svg'/><StyledName>Vercel</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='postman-seeklogo.com.svg'/><StyledName>Postman</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='whimiscal.png' style={{width: '96px', height: '96px'}}/><StyledName>Whimiscal</StyledName></StyledSquare>
+            <StyledSquare><StyledImage src='heroku-icon-svgrepo-com.svg'/><StyledName>Heroku</StyledName></StyledSquare>
             <MobileStyledSquare></MobileStyledSquare>
             <MobileStyledSquare></MobileStyledSquare>
           </ImagesContainer>

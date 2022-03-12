@@ -24,8 +24,7 @@ const InputContainer = styled.div`
   align-items: center;
   @media screen and (max-width: 1000px) {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    padding: 20px 10px;
+    width: 90%;
   }
 `;
 
@@ -37,6 +36,12 @@ const OkTxt = styled.h1`
   margin: 0 auto;
   width: 40px;
   height: auto;
+`;
+
+const StyledLabel = styled.label`
+  @media screen and (max-width: 1000px) {
+    padding-bottom: 5px;
+  }
 `;
 
 
@@ -69,39 +74,41 @@ export function ContactForm() {
       <form onSubmit={handleSubmit}>
         <NameAndEmail>
           <InputContainer>
-            <label htmlFor="name">
+            <StyledLabel htmlFor="name">
               Nombre&nbsp;&nbsp;<FontAwesomeIcon icon={faUser}/>
-            </label>
+            </StyledLabel>
             <input
             id="name"
             type="name" 
             name="name"
             onChange={(e) => {setName(e.target.value)}} 
             value={name ?? ''}
+            
             />
           </InputContainer>
           <InputContainer>
-            <label htmlFor="email">
+            <StyledLabel htmlFor="email">
               Email&nbsp;&nbsp;<FontAwesomeIcon icon={faEnvelopeSquare}/>
-            </label>
+            </StyledLabel>
             <input
             id="email"
             type="email" 
             name="email"
             onChange={(e) => {setEmail(e.target.value)}}
             value={email ?? ''}
+          
             />
           </InputContainer>
       </NameAndEmail>
       <InputContainer>
-        <label htmlFor="message">
+        <StyledLabel htmlFor="message">
           Mensaje&nbsp;&nbsp;<FontAwesomeIcon icon={faMessage}/>
-        </label>
+        </StyledLabel>
         <textarea
           id="message"
           name="message"
           onChange={(e) => {setMessage(e.target.value)}}
-
+         
         />
       </InputContainer>
       {
