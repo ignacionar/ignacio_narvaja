@@ -63,13 +63,13 @@ const Sections = () => {
         <Paragraph>Soy un Full Stack Web Developer, apasionado por la informática. Me considero autodidacta, con motivación a seguir mejorando en el ámbito y aprender en nuevas tecnologías.
         </Paragraph>
         <Paragraph>
-        Me formé durante el 2021 y durante los primeros meses de 2022 en el bootcamp de <StyledLink href={'https://nucba.com.ar/codingbootcamp'} target={'_blank'} rel="noopener noreferrer">NUCBA</StyledLink>.
+        Me formé durante el 2021 y durante los primeros meses de 2022 en el bootcamp de <StyledLink href={'https://drive.google.com/file/d/1IZbNKzxDNmQKdOGidQqHyU7uV0I3cn-R/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">NUCBA</StyledLink>.
         </Paragraph>
         <Paragraph>
         Actualmente estoy cursando la primera etapa de <StyledLink href={'https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'} rel="noopener noreferrer" target={'_blank'}>Argentina Programa</StyledLink>, y busco un trabajo que me permita desarrollarme profesionalmente :)
         </Paragraph>
         <section style={{textAlign: 'center'}}>
-          <StyledLink style={{color: '#4770f5', fontSize: '18px'}} href={'https://drive.google.com/file/d/1nU-uCDwGDrJcvsm6LBBWJtW3FTMiQBVu/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">
+          <StyledLink style={{color: '#4770f5', fontSize: '18px'}} href={'https://drive.google.com/file/d/1JUqVbabNSAtCK0GOve3QNOgSOuy0hyDg/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">
           DESCARGAR CURRICULUM VITAE
           </StyledLink>
         </section>
