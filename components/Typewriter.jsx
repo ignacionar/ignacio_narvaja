@@ -6,7 +6,7 @@ const typewriter = keyframes`
     width: 0;
   }
   to {
-    width: 13em;
+    width: 14em;
   }
 `;
 
