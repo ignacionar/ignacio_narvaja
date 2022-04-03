@@ -38,7 +38,7 @@ const StyledPar = styled.p`
 
 
 const Typewriter = () => {
-  return <StyledPar>npm&nbsp;run&nbsp;this&nbsp;project!</StyledPar>;
+  return <StyledPar>console.log(hello&nbsp;world!)</StyledPar>;
 };
 
 export default Typewriter;
