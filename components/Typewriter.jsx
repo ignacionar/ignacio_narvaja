@@ -38,7 +38,11 @@ const StyledPar = styled.p`
 
 
 const Typewriter = () => {
+<<<<<<< HEAD
   return <StyledPar>console.log(&quot;This&nbsp;is&nbsp;my&nbsp;portfolio&quot;)</StyledPar>;
+=======
+  return <StyledPar>console.log(hello&nbsp;world!)</StyledPar>;
+>>>>>>> 2bd052bd00c606238298bc089b209942c846358c
 };
 
 export default Typewriter;
