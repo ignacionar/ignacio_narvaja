@@ -33,6 +33,9 @@ const StyledPar = styled.p`
   transform: translateY(-50%);
   animation: ${typewriter} 4s steps(40) 1s 1 normal both,
   ${blinkTextCursor} 500ms steps(40) infinite normal;
+  @media screen and (max-width: 900px) {
+    font-size: 10px;
+  }
 `;
 
 
