@@ -17,8 +17,14 @@ export default function Home() {
     setTimeout(() => {
       setIntro(false)
     }, 8000);
+
+    if (intro) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   }
-  
+
   return (
     <>
       <Head>

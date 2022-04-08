@@ -69,7 +69,31 @@ const StyledEmail = styled.li`
   }
 `;
 
-const Header = () => {
+const StyledGlobe = styled.li`
+  cursor: pointer; 
+  color: white;
+  transition: .3s ease;
+  &:hover{
+    transform: scale(1.2);
+  }
+`;
+
+const StyledCountry = styled.img`
+  cursor: pointer;
+  transition: .3s ease;
+  &:hover{
+    transform: scale(1.2);
+  }
+  width: 50px;
+  height: auto;
+`;
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
   return (
   <StyledGrid>
     <StyledTitle>My Portfolio :)</StyledTitle>
@@ -78,9 +102,18 @@ const Header = () => {
       <a rel="noopener noreferrer" target='_blank' href="https://github.com/ignacionar"><StyledGithub><FontAwesomeIcon icon={faGithubSquare} /></StyledGithub></a>
       <a rel="noopener noreferrer" target='_blank' href="https://wa.me/543516320705/?text=urlencodedtext"><StyledWhatsapp><FontAwesomeIcon icon={faWhatsappSquare} /></StyledWhatsapp></a>
       <a rel="noopener noreferrer" target='_blank' href="mailto:ignacionarvajadev@gmail.com"><StyledEmail><FontAwesomeIcon icon={faEnvelopeSquare} /></StyledEmail></a>
+      <StyledCountry src={this.props.currentLanguage ? 'argentina.png' : 'unitedstates.png'} onClick={() => {
+        if (this.props.currentLanguage) {
+          return this.props.language(false)
+        }  
+
+        this.props.language(true)
+    
+        }}/>
     </StyledList>
   </StyledGrid>
-  );
+    )
+  };
 };
 
 export default Header;

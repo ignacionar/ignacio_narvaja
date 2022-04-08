@@ -18,7 +18,6 @@ const AbilitiesSection = styled.div`
   text-align: center;
   display: grid;
   grid-template-rows: 80px 1fr;
-  
 `;
 
 const AbilitiesTitle = styled.h1`
@@ -63,10 +62,10 @@ const StyledName = styled.h4`
   font-size: 15px;
 `;
 
-const Abilities = () => {
+const Abilities = ({language}) => {
   return (
     <>
-      <SectionTitle title='HABILIDADES' backgroundColor="#70d64b">Abilities</SectionTitle>
+      <SectionTitle title={language ? 'HABILIDADES' : 'ABILITIES'} backgroundColor="#70d64b">Abilities</SectionTitle>
       <AbilitiesGrid>
         <AbilitiesSection>
           <AbilitiesTitle>FRONT END</AbilitiesTitle>
@@ -91,13 +90,13 @@ const Abilities = () => {
             <StyledSquare><StyledImage src='express.png'/><StyledName>Express</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='firebase.png'/><StyledName>Firebase</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='mongodb.svg'/><StyledName>MongoDB</StyledName></StyledSquare>
-            <StyledSquare><StyledImage src='mongoose.png'/><StyledName>Mongoose</StyledName></StyledSquare>
+            <StyledSquare><StyledImage src='mysql.png'/><StyledName>MySQL</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='nodemon.png'/><StyledName>Nodemon</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='dotenv.png'/><StyledName>Dotenv</StyledName></StyledSquare>
           </ImagesContainer>
         </AbilitiesSection>
         <AbilitiesSection>
-          <AbilitiesTitle>OTROS</AbilitiesTitle>
+          <AbilitiesTitle>{language ? 'VARIOS' : 'OTHERS'}</AbilitiesTitle>
           <ImagesContainer>
             <StyledSquare><StyledImage src='git.png'/><StyledName>Git</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='github.png'/><StyledName>Github</StyledName></StyledSquare>

@@ -15,15 +15,14 @@ const FormContainer = styled.div`
 `;
 
 
-const Contactme = () => {
-
+const Contactme = ({language}) => {
 
   return (
 
     <>
-      <SectionTitle backgroundColor={'#FFC000'} title={'CONTÁCTEME'}/>
+      <SectionTitle backgroundColor={'#FFC000'} title={language ? 'CONTÁCTEME' : 'CONTACT ME'}/>
       <FormContainer>
-        <ContactForm />
+        <ContactForm language={language}/>
       
       </FormContainer>
     </>

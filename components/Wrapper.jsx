@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Aboutme from './Sections/Aboutme';
 import styled, { keyframes } from 'styled-components';
@@ -36,15 +36,22 @@ const StyledDiv = styled.div`
 
 
 const Wrapper = () => {
+
+  const [spanish, setSpanish] = useState(true)
+
   return (
   <>
     <StyledWrapper>
-      <Header/>
+      <Header language={(val) => {
+        setSpanish(val)
+        console.log(spanish)
+        }}
+        currentLanguage={spanish}/>
       <SectionContainer>
-        <Aboutme />
-        <Abilities />
-        <Projects />
-        <Contactme />
+        <Aboutme language={spanish}/>
+        <Abilities language={spanish}/>
+        <Projects language={spanish}/>
+        <Contactme language={spanish}/>
       </SectionContainer> 
     </StyledWrapper>
     <StyledDiv/>

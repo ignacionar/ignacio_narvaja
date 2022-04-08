@@ -45,7 +45,7 @@ const StyledLabel = styled.label`
 `;
 
 
-export function ContactForm() {
+export function ContactForm({language}) {
 
   const [name, setName] = useState()
   const [email, setEmail] = useState()
@@ -102,7 +102,7 @@ export function ContactForm() {
       </NameAndEmail>
       <InputContainer>
         <StyledLabel htmlFor="message">
-          Mensaje&nbsp;&nbsp;<FontAwesomeIcon icon={faMessage}/>
+          {language ? 'Mensaje  ' : 'Message  '}<FontAwesomeIcon icon={faMessage}/>
         </StyledLabel>
         <textarea
           id="message"
@@ -113,7 +113,7 @@ export function ContactForm() {
       </InputContainer>
       {
         !ok ? 
-        <button onSubmit={(e) => {preventDefault(e)}} disabled={name === undefined || name.length < 0 || email === undefined || !email.match(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i) || message === undefined || message.length < 0}>ENVIAR</button> 
+        <button onSubmit={(e) => {preventDefault(e)}} disabled={name === undefined || name.length < 0 || email === undefined || !email.match(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i) || message === undefined || message.length < 0}>{language ? 'ENVIAR' : 'SEND'}</button> 
         : 
         <OkTxt><FontAwesomeIcon icon={faCheck}/></OkTxt>
       }

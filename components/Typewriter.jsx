@@ -6,7 +6,7 @@ const typewriter = keyframes`
     width: 0;
   }
   to {
-    width: 13em;
+    width: 19.5em;
   }
 `;
 
@@ -38,7 +38,7 @@ const StyledPar = styled.p`
 
 
 const Typewriter = () => {
-  return <StyledPar>npm&nbsp;run&nbsp;this&nbsp;project!</StyledPar>;
+  return <StyledPar>console.log(&quot;This&nbsp;is&nbsp;my&nbsp;portfolio&quot;)</StyledPar>;
 };
 
 export default Typewriter;

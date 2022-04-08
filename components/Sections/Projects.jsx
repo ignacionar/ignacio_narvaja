@@ -98,21 +98,21 @@ const ProjectLink = styled.a`
   }
 `;
 
-const Projects = () => {
+const Projects = ({language}) => {
   return (
     <>
-      <SectionTitle title='PROYECTOS' backgroundColor="#c93636">Abilities</SectionTitle> 
+      <SectionTitle title={language ? 'PROYECTOS' : 'PROJECTS'} backgroundColor="#c93636">Abilities</SectionTitle> 
       <Project>
         <ProjectTitle>REACT + FIREBASE | ECOMMERCE</ProjectTitle>
         <TextNImg>
           <ProjectImg src={'firebaseecomm.png'}/>
           <ProjectText>
-            <Paragraph>Un simple modelo de ecommerce hecho con React para el Frontend, y Firebase para el backend. Cuenta con un sistema de Login / Signup y diversas funcionalidades con Redux.</Paragraph>
+            <Paragraph>{language ? 'Un simple modelo de ecommerce hecho con React para el Frontend, y Firebase para el backend. Cuenta con un sistema de Login / Signup y diversas funcionalidades con Redux.' : 'A simple ecommerce model made with React (Frontend) and Firebase (Backend). It has a Login / Signup System and other functionalities with Redux'}</Paragraph>
           </ProjectText>
         </TextNImg>
         <ProjectLinks>
-          <ProjectLink href='https://github.com/ignacionar/react_firebase_ecommerce' target={'_blank'} rel="noopener noreferrer">REPOSITORIO <FontAwesomeIcon icon={faCode}/></ProjectLink>
-          <ProjectLink href='https://react-firebase-ecommerce-iota.vercel.app/' target={'_blank'} rel="noopener noreferrer">PRUEBA <FontAwesomeIcon icon={faDesktop}/></ProjectLink>
+          <ProjectLink href='https://github.com/ignacionar/react_firebase_ecommerce' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'} <FontAwesomeIcon icon={faCode}/></ProjectLink>
+          <ProjectLink href='https://react-firebase-ecommerce-iota.vercel.app/' target={'_blank'} rel="noopener noreferrer">{language ? 'PRUEBA' : 'TEST'} <FontAwesomeIcon icon={faDesktop}/></ProjectLink>
         </ProjectLinks>
       </Project>
       <Project>
@@ -120,11 +120,11 @@ const Projects = () => {
         <TextNImg>
           <ProjectImg src={'mongotickets.png'}/>
           <ProjectText>
-            <Paragraph>Una página que hace reservas de pasajes. Cuenta con un sistema de Login / Signup, el usuario puede comprobar sus órdenes/compras en un apartado. Las compras aparecen como &quot;pendientes&quot; o &quot;realizadas&quot; dependiendo su estado en la base de datos. Typescript fue requerido para el modelado de datos y Redux para permanecer al usuario y sus órdenes.</Paragraph>
+            <Paragraph>{language ? 'Una página que hace reservas de pasajes. Cuenta con un sistema de Login / Signup, el usuario puede comprobar sus órdenes/compras en un apartado. Las compras aparecen como "pendientes" o "realizadas" dependiendo su estado en la base de datos. Typescript fue requerido para el modelado de datos y Redux para permanecer al usuario y sus órdenes.' : 'This page simulates tickets reservations. It has a Login / Signup interface, the user can see the orders/purchases in a section. A purchase is "pending" or "completed" depending on its state in the database. Typescript was required for data models and Redux for the user system and its orders'}</Paragraph>
           </ProjectText>
         </TextNImg>
         <ProjectLinks>
-          <ProjectLink href='https://github.com/ignacionar/mongo_tickets_reservation' target={'_blank'} rel="noopener noreferrer">REPOSITORIO <FontAwesomeIcon icon={faCode}/></ProjectLink>
+          <ProjectLink href='https://github.com/ignacionar/mongo_tickets_reservation' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'} <FontAwesomeIcon icon={faCode}/></ProjectLink>
         </ProjectLinks>
       </Project>
       <Project>
@@ -132,12 +132,12 @@ const Projects = () => {
         <TextNImg>
           <ProjectImg src={'crlandingpage.png'}/>
           <ProjectText>
-            <Paragraph>Una versión actualizada de la página de mi escuela. No contiene back end, pero pensé que se podía exprimir el potencial de la página oficial un poco más <StyledLink href='https://escuelacristoredentor.edu.ar/' rel="noopener noreferrer"  target={'_blank'}>(Tocar para ir a la página oficial).</StyledLink></Paragraph>
+            <Paragraph>{language ? 'Una versión actualizada de la página de mi escuela. No contiene back end, pero pensé que se podía exprimir el potencial de la página oficial un poco más' : "An improved version of my Schools' official website. There's not back end in the project, but I thought I could maybe use its full potential" }<StyledLink href='https://escuelacristoredentor.edu.ar/' rel="noopener noreferrer"  target={'_blank'}>{language ? ' (Tocar para ir a la página oficial)' : ' (Check the official website here)'}.</StyledLink></Paragraph>
           </ProjectText>
         </TextNImg>
         <ProjectLinks>
-          <ProjectLink href='https://github.com/ignacionar/cr_landing_page' target={'_blank'} rel="noopener noreferrer">REPOSITORIO <FontAwesomeIcon icon={faCode}/></ProjectLink>
-          <ProjectLink href='https://cr-landing-page.vercel.app/' target={'_blank'} rel="noopener noreferrer">PRUEBA <FontAwesomeIcon icon={faDesktop}/></ProjectLink>
+          <ProjectLink href='https://github.com/ignacionar/cr_landing_page' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'} <FontAwesomeIcon icon={faCode}/></ProjectLink>
+          <ProjectLink href='https://cr-landing-page.vercel.app/' target={'_blank'} rel="noopener noreferrer">{language ? 'PRUEBA' : 'TEST'}  <FontAwesomeIcon icon={faDesktop}/></ProjectLink>
         </ProjectLinks>
       </Project>
       <Project>
@@ -145,24 +145,36 @@ const Projects = () => {
         <TextNImg>
           <ProjectImg src={'foodweb.png'}/>
           <ProjectText>
-            <Paragraph>Proyecto realizado durante mi cursada en NUCBA, el mismo fue realizado con ayuda del tutor. Se usó Redux para mantener los datos del usuario</Paragraph>
+            <Paragraph>{language ? 'Proyecto realizado durante mi cursada en NUCBA, el mismo fue realizado con ayuda del tutor. Se usó Redux para mantener los datos del usuario' : 'This project was done when I was studying in NUCBA, with the help of my professor. It uses Redux to manipulate the User data/state'}</Paragraph>
           </ProjectText>
         </TextNImg>
         <ProjectLinks>
-          <ProjectLink href='https://github.com/ignacionar/react-firebase-food-website' target={'_blank'} rel="noopener noreferrer">REPOSITORIO <FontAwesomeIcon icon={faCode}/></ProjectLink>
-          <ProjectLink href='https://react-firebase-food-ecom.vercel.app/' target={'_blank'} rel="noopener noreferrer">PRUEBA <FontAwesomeIcon icon={faDesktop}/></ProjectLink>
+          <ProjectLink href='https://github.com/ignacionar/react-firebase-food-website' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'}  <FontAwesomeIcon icon={faCode}/></ProjectLink>
+          <ProjectLink href='https://react-firebase-food-ecom.vercel.app/' target={'_blank'} rel="noopener noreferrer">{language ? 'PRUEBA' : 'TEST'} <FontAwesomeIcon icon={faDesktop}/></ProjectLink>
         </ProjectLinks>
       </Project>
       <Project>
-        <ProjectTitle>MONGODB + REACT | TO-DO LIST</ProjectTitle>
+        <ProjectTitle>MONGODB + REACT | TO-DO LIST v1</ProjectTitle>
         <TextNImg>
           <ProjectImg src={'mongotodo.png'}/>
           <ProjectText>
-            <Paragraph>El proyecto utiliza los métodos fundamentales CRUD para interactuar con los to-dos. Para este proyecto, decidí organizar de forma separada el back end y el front end.</Paragraph>
+            <Paragraph>{language ? 'El proyecto utiliza los métodos fundamentales CRUD para interactuar con los to-dos.' : 'This project uses the fundamental CRUD methods to interact with your to-dos.'}</Paragraph>
           </ProjectText>
         </TextNImg>
         <ProjectLinks>
-          <ProjectLink href='https://github.com/ignacionar/mongodb_todolist' target={'_blank'} rel="noopener noreferrer">REPOSITORIO <FontAwesomeIcon icon={faCode}/></ProjectLink>
+          <ProjectLink href='https://github.com/ignacionar/mongodb_todolist' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'}  <FontAwesomeIcon icon={faCode}/></ProjectLink>
+        </ProjectLinks>
+      </Project>
+      <Project>
+        <ProjectTitle>MYSQL + REACT | TO-DO LIST v2</ProjectTitle>
+        <TextNImg>
+          <ProjectImg src={'todolistv2.png'}/>
+          <ProjectText>
+            <Paragraph>{language ? 'Al igual que en el anterior proyecto, se utilizan los métodos CRUD, y se establece una relación entre un usuario y los to-dos (foreign keys). Se usa typescript en Back / Front.' : "It works in a similar way as the previous project, it creates a relation between a user and the to-dos (foreign keys). It's made with Typescript for both Front / Back end"}</Paragraph>
+          </ProjectText>
+        </TextNImg>
+        <ProjectLinks>
+          <ProjectLink href='https://github.com/ignacionar/mysql_todolist' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'}  <FontAwesomeIcon icon={faCode}/></ProjectLink>
         </ProjectLinks>
       </Project>
     </>
