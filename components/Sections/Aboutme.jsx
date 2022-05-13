@@ -69,7 +69,7 @@ const Sections = ({language}) => {
         {language ? "Actualmente estoy cursando la primera etapa de " : "I'm currently studying in the first stage of "} <StyledLink href={'https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'} rel="noopener noreferrer" target={'_blank'}>Argentina Programa</StyledLink> {language ? " y busco un trabajo que me permita desarrollarme profesionalmente :)" : "and I'm looking for a job in order to start as a professional :)"}
         </Paragraph>
         <section style={{textAlign: 'center'}}>
-          <StyledLink style={{color: '#4770f5', fontSize: '18px'}} href={language ? 'https://drive.google.com/file/d/1JUqVbabNSAtCK0GOve3QNOgSOuy0hyDg/view?usp=sharing' : 'https://docs.google.com/document/d/1-yWpW9dv3UccAI8AmxPwhq3NDtzcRHQI/edit?usp=sharing&ouid=105909034094815124844&rtpof=true&sd=true'} target={'_blank'} rel="noopener noreferrer">
+          <StyledLink style={{color: '#4770f5', fontSize: '18px'}} href={language ? 'https://drive.google.com/file/d/1nJIYPK4Rs-8iz-tbCuJiAQXmnuJautXg/view?usp=sharing' : 'https://drive.google.com/file/d/1p6YpisRPNrf8r6a7zc0rivTXjTSbXbR1/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">
           {language ? 'DESCARGAR CURRICULUM VITAE' : 'DOWNLOAD CURRICULUM VITAE'}
           </StyledLink>
         </section>
