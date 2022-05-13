@@ -60,10 +60,10 @@ const Sections = ({language}) => {
         <StyledName>Ignacio Narvaja</StyledName>
       </PhotoContainer>
       <StyledText>
-        <Paragraph>{language ? 'Soy un Full Stack Web Developer, apasionado por la informática. Me considero autodidacta, con motivación a seguir mejorando en el ámbito y aprender en nuevas tecnologías.' : "I'm a Full Stack Web Developer, passionate about computing sciences. I like to work on my own, I will continue learning more technologies and also improving on Web Development"
+        <Paragraph>{language ? 'Soy un Full Stack Web Developer, con gran interés por la informática. Me considero autodidacta, con motivación a seguir mejorando en el ámbito y aprender en nuevas tecnologías.' : "I'm a Full Stack Web Developer, passionate about computing sciences. I like to work on my own, I will continue learning more technologies and also improving on Web Development"
         }</Paragraph>
         <Paragraph>
-        {language ? 'Me formé durante el 2021 y durante los primeros meses de 2022 en el bootcamp de' : 'I studied web development during 2021 and the first months of 2022 in the ' }<StyledLink href={'https://drive.google.com/file/d/1IZbNKzxDNmQKdOGidQqHyU7uV0I3cn-R/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">NUCBA</StyledLink> {language ? '' : 'Bootcamp'}.
+        {language ? 'Me formé durante el 2021 y durante los primeros meses de 2022 en el bootcamp de ' : 'I studied web development during 2021 and the first months of 2022 in the ' }<StyledLink href={'https://drive.google.com/file/d/1IZbNKzxDNmQKdOGidQqHyU7uV0I3cn-R/view?usp=sharing'} target={'_blank'} rel="noopener noreferrer">NUCBA</StyledLink>{language ? '' : ' Bootcamp'}.
         </Paragraph>
         <Paragraph>
         {language ? "Actualmente estoy cursando la primera etapa de " : "I'm currently studying in the first stage of "} <StyledLink href={'https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa'} rel="noopener noreferrer" target={'_blank'}>Argentina Programa</StyledLink> {language ? " y busco un trabajo que me permita desarrollarme profesionalmente :)" : "and I'm looking for a job in order to start as a professional :)"}

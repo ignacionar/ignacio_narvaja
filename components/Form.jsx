@@ -75,7 +75,7 @@ export function ContactForm({language}) {
         <NameAndEmail>
           <InputContainer>
             <StyledLabel htmlFor="name">
-              Nombre&nbsp;&nbsp;<FontAwesomeIcon icon={faUser}/>
+              {language ? 'Nombre ' : 'Name  '}<FontAwesomeIcon icon={faUser}/>
             </StyledLabel>
             <input
             id="name"
@@ -83,7 +83,7 @@ export function ContactForm({language}) {
             name="name"
             onChange={(e) => {setName(e.target.value)}} 
             value={name ?? ''}
-            
+              
             />
           </InputContainer>
           <InputContainer>
