@@ -35,7 +35,7 @@ const StyledDiv = styled.div`
 `;
 
 
-const Wrapper = () => {
+const Wrapper = ({imgSrc}) => {
 
   const [spanish, setSpanish] = useState(true)
 
@@ -48,7 +48,7 @@ const Wrapper = () => {
         }}
         currentLanguage={spanish}/>
       <SectionContainer>
-        <Aboutme language={spanish}/>
+        <Aboutme language={spanish} imgSrc={imgSrc}/>
         <Abilities language={spanish}/>
         <Projects language={spanish}/>
         <Contactme language={spanish}/>

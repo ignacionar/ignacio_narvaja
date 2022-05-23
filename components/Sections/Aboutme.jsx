@@ -51,12 +51,12 @@ const StyledName = styled.h2`
 `;
 
 
-const Sections = ({language}) => {
+const Sections = ({language, imgSrc}) => {
   return <SectionDiv>
     <SectionTitle title={language ? 'ACERCA DE MI' : 'ABOUT ME'} backgroundColor="#4770f5" style={{marginTop: '0'}}/> 
     <TextNFoto>
       <PhotoContainer>
-        <StyledPhoto src={'foto.png'}/>
+        <StyledPhoto src={imgSrc}/>
         <StyledName>Ignacio Narvaja</StyledName>
       </PhotoContainer>
       <StyledText>

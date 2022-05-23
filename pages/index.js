@@ -7,6 +7,7 @@ import Head from 'next/head';
 export default function Home() {
 
   const [intro, setIntro] = useState(true);
+  const imageSource = 'foto.png'
  
   if (typeof document !== 'undefined') {
     setTimeout(() => {
@@ -38,7 +39,7 @@ export default function Home() {
           <Typewriter />
         </div>
       
-      ) : <Wrapper/>
+      ) : <Wrapper imgSrc={imageSource}/>
     }
       
     </>
