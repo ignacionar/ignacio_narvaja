@@ -39,7 +39,7 @@ export default function Home() {
           <Typewriter />
         </div>
       
-      ) : <Wrapper imgSrc={imageSource}/>
+      ) : <Wrapper/>
     }
       
     </>

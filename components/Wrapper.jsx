@@ -44,7 +44,6 @@ const Wrapper = ({imgSrc}) => {
     <StyledWrapper>
       <Header language={(val) => {
         setSpanish(val)
-        console.log(spanish)
         }}
         currentLanguage={spanish}/>
       <SectionContainer>

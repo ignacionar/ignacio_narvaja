@@ -1,9 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Paragraph } from '../SectionComponents/Paragraph';
 import { SectionDiv } from '../SectionComponents/SectionDiv';
 import SectionTitle from '../SectionComponents/SectionTitle';
 import { StyledLink } from '../SectionComponents/StyledLink';
+
+const FadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 const TextNFoto = styled.div`
   display: grid;
@@ -22,6 +31,7 @@ const PhotoContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  animation: ${FadeIn} 3s forwards;
 `;
 
 const StyledPhoto = styled.img`
@@ -51,12 +61,12 @@ const StyledName = styled.h2`
 `;
 
 
-const Sections = ({language, imgSrc}) => {
+const Sections = ({language}) => {
   return <SectionDiv>
     <SectionTitle title={language ? 'ACERCA DE MI' : 'ABOUT ME'} backgroundColor="#4770f5" style={{marginTop: '0'}}/> 
     <TextNFoto>
       <PhotoContainer>
-        <StyledPhoto src={imgSrc}/>
+        <StyledPhoto src={'foto.png'}/>
         <StyledName>Ignacio Narvaja</StyledName>
       </PhotoContainer>
       <StyledText>
