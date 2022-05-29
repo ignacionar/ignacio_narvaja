@@ -116,6 +116,18 @@ const Projects = ({language}) => {
         </ProjectLinks>
       </Project>
       <Project>
+        <ProjectTitle>API + REACT ASSESSMENT</ProjectTitle>
+        <TextNImg>
+          <ProjectImg src={'assemsnet.png'}/>
+          <ProjectText>
+            <Paragraph>{language ? 'Mi primer obra freelance, usé una API de la empresa para obtener los datos de cada usuario, e hice un hook que se encarga de la paginación.' : 'This is my first freelance work, I used an API to get the users data, and created a custom hook that enables the pagination.'}</Paragraph>
+          </ProjectText>
+        </TextNImg>
+        <ProjectLinks>
+          <ProjectLink href='https://github.com/ignacionar/react_firebase_ecommerce' target={'_blank'} rel="noopener noreferrer">{language ? 'REPOSITORIO' : 'REPOSITORY'} <FontAwesomeIcon icon={faCode}/></ProjectLink>
+        </ProjectLinks>
+      </Project>
+      <Project>
         <ProjectTitle>MONGODB + NEXT | TICKETS RESERVATION</ProjectTitle>
         <TextNImg>
           <ProjectImg src={'mongotickets.png'}/>
