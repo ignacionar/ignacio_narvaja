@@ -16,6 +16,7 @@ const Project = styled.div`
   grid-template-rows: 1fr 1fr;
   align-items: center;
   box-shadow: 5px 5px 5px black;
+  height: auto;
 `;
 
 const TextNImg = styled.div`
