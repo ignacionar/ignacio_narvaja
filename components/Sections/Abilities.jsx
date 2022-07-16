@@ -90,7 +90,7 @@ const Abilities = ({language}) => {
             <StyledSquare><StyledImage src='express.png'/><StyledName>Express</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='firebase.png'/><StyledName>Firebase</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='mongodb.svg'/><StyledName>MongoDB</StyledName></StyledSquare>
-            <StyledSquare><StyledImage src='mysql.png'/><StyledName>MySQL</StyledName></StyledSquare>
+            {/* <StyledSquare><StyledImage src='mysql.png'/><StyledName>MySQL</StyledName></StyledSquare> */}
             <StyledSquare><StyledImage src='nodemon.png'/><StyledName>Nodemon</StyledName></StyledSquare>
             <StyledSquare><StyledImage src='dotenv.png'/><StyledName>Dotenv</StyledName></StyledSquare>
           </ImagesContainer>
